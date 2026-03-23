@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Paradi Hemanth Kumar | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="ocean-bg"></div>
+<div class="ocean-wave"></div>
+<div class="ocean-wave2"></div>
+
+<!-- ===== ENTRY SCREEN ===== -->
+<div id="entry-screen">
+  <div class="entry-particles" id="particles"></div>
+  <div class="arc-reactor-wrap" id="arc-entry" onclick="enterPortfolio()" title="Click to Enter Portfolio">
+    <div class="arc-inner">
+      <div class="arc-ring ring1"></div>
+      <div class="arc-ring ring2"></div>
+      <div class="arc-ring ring3"></div>
+      <div class="arc-ring ring4"></div>
+      <div class="arc-spokes">
+        <div class="spoke"></div><div class="spoke"></div><div class="spoke"></div>
+        <div class="spoke"></div><div class="spoke"></div><div class="spoke"></div>
+      </div>
+      <div class="arc-core"></div>
+    </div>
+    <div class="arc-hover-label">CLICK TO ACTIVATE</div>
+  </div>
+  <div class="entry-title">Hello 👋 Welcome to My Digital Portfolio</div>
+  <div class="entry-sub">PARADI HEMANTH KUMAR &nbsp;·&nbsp; DATA SCIENCE &nbsp;·&nbsp; ML ENGINEER</div>
+  <button class="enter-btn" onclick="enterPortfolio()">⚡ Enter Portfolio</button>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div id="main-content">
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">PHK<span>.portfolio</span></a>
+  <div class="nav-arc" onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'})" title="Back to Home">
+    <div class="nav-arc-ring"></div>
+    <div class="nav-arc-ring"></div>
+    <div class="nav-arc-core-small"></div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#training">Training</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="reveal">
+        <div class="hero-badge"><div class="hero-badge-dot"></div>AVAILABLE FOR OPPORTUNITIES</div>
+        <h1 class="hero-name">Paradi Hemanth Kumar</h1>
+        <div class="hero-typing"><span id="typing-text"></span><span class="typing-cursor">|</span></div>
+        <p class="hero-desc">B.Tech Computer Science student at Lovely Professional University, passionate about Data Science, Machine Learning, and building end-to-end data-driven solutions.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">🚀 Explore Portfolio</a>
+          <a href="images/cv.png" download="Paradi_Hemanth_Kumar_CV.png" class="btn-outline">📄 Download CV</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Projects</div></div>
+          <div class="stat"><div class="stat-num">6</div><div class="stat-label">Certifications</div></div>
+          <div class="stat"><div class="stat-num">9+</div><div class="stat-label">Technologies</div></div>
+        </div>
+      </div>
+      <div class="hero-image-wrap reveal">
+        <div class="hero-photo-ring">
+          <img src="images/profile.jpeg" alt="Paradi Hemanth Kumar"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="section-sub">Who I Am</div>
+    <div class="section-title">About Me</div>
+    <div class="section-line"></div>
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="about-text">
+          <p>I am a dedicated <span>B.Tech Computer Science</span> student at Lovely Professional University with a strong passion for <span>Data Science, Machine Learning,</span> and <span>Software Development</span>. I believe data is the most powerful tool of our generation and I am committed to mastering it.</p>
+          <p>I focus on solving real-world problems using data-driven approaches — from cleaning raw datasets and building predictive models, to presenting actionable insights through compelling visualizations. I enjoy the full pipeline: exploring data, finding patterns, and turning them into something meaningful.</p>
+          <p>Beyond academics, I am a <span>self-motivated learner</span> who actively pursues certifications, online courses, and hands-on projects to stay ahead of the curve. I thrive in collaborative environments and enjoy breaking down complex problems into simple, elegant solutions.</p>
+          <p>Currently deepening my expertise in <span>Data Structures & Algorithms</span>, advanced Machine Learning techniques, and GenAI tools — with a long-term vision of contributing to impactful AI-driven products.</p>
+        </div>
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="info-card-icon">🎯</div>
+            <div class="info-card-title">Career Goal</div>
+            <div class="info-card-body">Become a Data Scientist / ML Engineer building impactful, scalable AI solutions that solve real-world problems</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">💡</div>
+            <div class="info-card-title">Interests</div>
+            <div class="info-card-body">Machine Learning · Data Analysis · Stock Prediction · Generative AI · Web Development</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">⚡</div>
+            <div class="info-card-title">Strengths</div>
+            <div class="info-card-body">Problem-Solving · Analytical Thinking · Team Player · Adaptability · Project Management</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">🚀</div>
+            <div class="info-card-title">Current Focus</div>
+            <div class="info-card-body">DSA · Advanced ML · GenAI Tools · Real-world end-to-end data projects</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">🌐</div>
+            <div class="info-card-title">Languages</div>
+            <div class="info-card-body">Telugu (Native) · Hindi (Fluent) · English (Professional)</div>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">🏆</div>
+            <div class="info-card-title">Long-term Vision</div>
+            <div class="info-card-body">Build AI-driven products that create measurable social and business impact at scale</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-img-side reveal">
+        <img src="images/profile.jpeg" alt="Paradi Hemanth Kumar" class="about-photo"/>
+        <div class="contact-quick glass">
+          <div class="contact-quick-title">CONTACT INFO</div>
+          <div class="contact-quick-item">
+            📧 hemanth3359v@gmail.com<br>
+            📱 +91-9390565761<br>
+            🔗 linkedin.com/in/hemanth-kumar-paradi<br>
+            💻 github.com/hemanthparadi
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESUME ===== -->
+<section id="resume">
+  <div class="container">
+    <div class="section-sub">My CV</div>
+    <div class="section-title">Resume</div>
+    <div class="section-line"></div>
+    <div class="resume-section reveal">
+      <div class="resume-preview">
+        <img src="images/cv.png" alt="Paradi Hemanth Kumar CV"/>
+      </div>
+      <a href="images/cv.png" download="Paradi_Hemanth_Kumar_CV.png" class="btn-primary" style="display:inline-flex;margin:0 auto;">📥 Download CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education">
+  <div class="container">
+    <div class="section-sub">Academic Background</div>
+    <div class="section-title">Education</div>
+    <div class="section-line"></div>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-year">AUG 2023 – PRESENT</div>
+        <div class="timeline-school">Lovely Professional University</div>
+        <div class="timeline-degree">Bachelor of Technology — Computer Science & Engineering &nbsp;·&nbsp; Phagwara, Punjab</div>
+        <div class="timeline-score">CGPA: 6.50</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">JUN 2021 – MAR 2023</div>
+        <div class="timeline-school">Tirumala Junior College</div>
+        <div class="timeline-degree">Intermediate &nbsp;·&nbsp; Visakhapatnam, Andhra Pradesh</div>
+        <div class="timeline-score">95%</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">JUN 2020 – MAR 2021</div>
+        <div class="timeline-school">Saint Joseph's English Medium High School</div>
+        <div class="timeline-degree">Matriculation &nbsp;·&nbsp; Vizianagaram, Andhra Pradesh</div>
+        <div class="timeline-score">94%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="container">
+    <div class="section-sub">Technical Arsenal</div>
+    <div class="section-title">Skills</div>
+    <div class="section-line"></div>
+
+    <div class="skills-group reveal">
+      <div class="skills-group-title">Programming Languages</div>
+      <div class="skills-grid">
+        <div class="skill-pill">🐍 Python</div>
+        <div class="skill-pill">☕ Java</div>
+        <div class="skill-pill">⚙️ C++</div>
+        <div class="skill-pill">🔧 C</div>
+        <div class="skill-pill">🌐 HTML5</div>
+        <div class="skill-pill">🎨 CSS3</div>
+      </div>
+    </div>
+
+    <div class="skills-group reveal">
+      <div class="skills-group-title">Libraries &amp; Frameworks</div>
+      <div class="skills-grid">
+        <div class="skill-pill">🌶️ Flask</div>
+        <div class="skill-pill">🐼 Pandas</div>
+        <div class="skill-pill">🔢 NumPy</div>
+        <div class="skill-pill">🤖 Scikit-learn</div>
+        <div class="skill-pill">📊 Matplotlib</div>
+        <div class="skill-pill">🌊 Seaborn</div>
+        <div class="skill-pill">🧠 TensorFlow</div>
+        <div class="skill-pill">🔥 Keras</div>
+        <div class="skill-pill">📈 Plotly</div>
+        <div class="skill-pill">⚡ SciPy</div>
+      </div>
+    </div>
+
+    <div class="skills-group reveal">
+      <div class="skills-group-title">Platforms &amp; Tools</div>
+      <div class="skills-grid">
+        <div class="skill-pill">🗄️ MySQL</div>
+        <div class="skill-pill">📗 Excel (Advanced)</div>
+        <div class="skill-pill">📊 Power BI</div>
+        <div class="skill-pill">🔀 Git</div>
+        <div class="skill-pill">🐙 GitHub</div>
+        <div class="skill-pill">💻 VS Code</div>
+        <div class="skill-pill">📓 Jupyter Notebook</div>
+        <div class="skill-pill">☁️ Google Colab</div>
+        <div class="skill-pill">📋 Google Sheets</div>
+        <div class="skill-pill">🖥️ PyCharm</div>
+      </div>
+    </div>
+
+    <div class="skills-group reveal">
+      <div class="skills-group-title">Data Science &amp; AI Concepts</div>
+      <div class="skills-grid">
+        <div class="skill-pill">🔍 Exploratory Data Analysis</div>
+        <div class="skill-pill">🧹 Data Preprocessing</div>
+        <div class="skill-pill">🏗️ Feature Engineering</div>
+        <div class="skill-pill">📉 Regression Models</div>
+        <div class="skill-pill">🌳 Classification Models</div>
+        <div class="skill-pill">🔗 Clustering (K-Means)</div>
+        <div class="skill-pill">📏 Model Evaluation</div>
+        <div class="skill-pill">🕐 Time-Series Analysis</div>
+        <div class="skill-pill">🤖 Prompt Engineering</div>
+        <div class="skill-pill">☁️ Cloud Computing</div>
+      </div>
+    </div>
+
+    <div class="skills-group reveal">
+      <div class="skills-group-title">Soft Skills</div>
+      <div class="skills-grid">
+        <div class="skill-pill">🧩 Problem Solving</div>
+        <div class="skill-pill">🤝 Team Collaboration</div>
+        <div class="skill-pill">📋 Project Management</div>
+        <div class="skill-pill">🔄 Adaptability</div>
+        <div class="skill-pill">💬 Communication</div>
+        <div class="skill-pill">⏰ Time Management</div>
+        <div class="skill-pill">🎯 Attention to Detail</div>
+        <div class="skill-pill">📚 Self-Learning</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="container">
+    <div class="section-sub">What I've Built</div>
+    <div class="section-title">Projects</div>
+    <div class="section-line"></div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-img"><div class="project-img-icon">📊</div></div>
+        <div class="project-body">
+          <span class="project-tag">POWER BI</span><span class="project-tag">DEC 2025</span>
+          <div class="project-name">Assembly Segment Vote Analysis Dashboard</div>
+          <div class="project-desc">Built an interactive Power BI dashboard analyzing assembly segment data across multiple dimensions. Designed a star-schema data model and created DAX measures and KPIs to track key metrics including segment-wise distribution, averages, and trend-based insights.</div>
+          <div class="project-tech">
+            <span class="tech-badge">Power BI</span>
+            <span class="tech-badge">Power Query</span>
+            <span class="tech-badge">DAX</span>
+            <span class="tech-badge">Data Modeling</span>
+            <span class="tech-badge">CSV</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-img"><div class="project-img-icon">🧠</div></div>
+        <div class="project-body">
+          <span class="project-tag">JAVA</span><span class="project-tag">JUN 2025</span>
+          <div class="project-name">Mental Health Simulator</div>
+          <div class="project-desc">Developed a Java-based application to assess and manage mental health information through an interactive UI. Used OOP principles for modular design with data validation and report generation features for mental health awareness.</div>
+          <div class="project-tech">
+            <span class="tech-badge">Java</span>
+            <span class="tech-badge">OOP</span>
+            <span class="tech-badge">File Handling</span>
+            <span class="tech-badge">DSA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-img"><div class="project-img-icon">♟️</div></div>
+        <div class="project-body">
+          <span class="project-tag">EXCEL</span><span class="project-tag">MAY 2025</span>
+          <div class="project-name">Chess Game Analysis Dashboard</div>
+          <div class="project-desc">Created an interactive dashboard in Microsoft Excel to visualize and analyze 20,000+ chess game records. Used Pivot Tables, Charts, Slicers, Conditional Formatting and Data Cleaning techniques for dynamic filtering and trend analysis.</div>
+          <div class="project-tech">
+            <span class="tech-badge">Excel</span>
+            <span class="tech-badge">Pivot Tables</span>
+            <span class="tech-badge">Slicers</span>
+            <span class="tech-badge">Data Analysis</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRAINING ===== -->
+<section id="training">
+  <div class="container">
+    <div class="section-sub">Professional Training</div>
+    <div class="section-title">Training</div>
+    <div class="section-line"></div>
+    <div class="training-card reveal">
+      <div class="training-header">
+        <div>
+          <div class="training-name">Data Structures &amp; Algorithms using Java</div>
+          <div class="training-org">Cipher Schools (Edtech Company) &nbsp;·&nbsp; Lovely Professional University</div>
+        </div>
+        <div class="training-date">JUL 2025</div>
+      </div>
+      <ul class="training-points">
+        <li>Mastered fundamental and advanced Data Structures including Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, and Hash Maps, with a focus on performance analysis using Big O notation to evaluate space and time complexity.</li>
+        <li>Progressively implemented various Algorithms including Sorting (Merge, Quick, Heap), Searching (Binary, BFS, DFS), and Dynamic Programming, applying them to real-world scenarios like network routing and database indexing.</li>
+        <li>Solved 50+ coding problems applying DSA principles, strengthening logical reasoning and the ability to break down complex problems into optimized algorithmic solutions.</li>
+        <li>Gained hands-on experience with Java OOP concepts including Inheritance, Polymorphism, Encapsulation, and Abstraction — writing clean, modular, and reusable code throughout the training.</li>
+        <li>Studied exception handling, file I/O, and collections framework in Java to build robust, production-ready applications.</li>
+      </ul>
+    </div>
+
+    <div class="training-card reveal">
+      <div class="training-header">
+        <div>
+          <div class="training-name">Generative AI &amp; Prompt Engineering</div>
+          <div class="training-org">Infosys Springboard &nbsp;·&nbsp; Self-paced Online Program</div>
+        </div>
+        <div class="training-date">AUG – SEP 2025</div>
+      </div>
+      <ul class="training-points">
+        <li>Completed two industry-recognized Infosys Springboard certifications covering ChatGPT-4 Prompt Engineering and building Generative AI applications using No-Code tools.</li>
+        <li>Learned to design effective prompts for large language models (LLMs) including ChatGPT and GPT-4, understanding prompt chaining, few-shot prompting, and zero-shot techniques.</li>
+        <li>Explored no-code AI application development platforms to build functional GenAI solutions without traditional programming — bridging the gap between AI theory and practical deployment.</li>
+        <li>Gained conceptual understanding of transformer architecture, tokenization, embeddings, and how modern LLMs like GPT generate contextual responses.</li>
+      </ul>
+    </div>
+
+    <div class="training-card reveal">
+      <div class="training-header">
+        <div>
+          <div class="training-name">Cloud Computing</div>
+          <div class="training-org">NPTEL &nbsp;·&nbsp; IIT Kharagpur &nbsp;·&nbsp; Skill India (Govt. of India)</div>
+        </div>
+        <div class="training-date">JAN – APR 2025</div>
+      </div>
+      <ul class="training-points">
+        <li>Completed a 12-week government-certified NPTEL course on Cloud Computing, covering core concepts of cloud service models (IaaS, PaaS, SaaS) and deployment models (public, private, hybrid).</li>
+        <li>Studied virtualization technologies, cloud storage systems, distributed computing frameworks, and cloud security fundamentals essential for modern data engineering pipelines.</li>
+        <li>Gained understanding of major cloud platforms (AWS, Azure, GCP) and their use in hosting scalable ML model deployments and big data workloads.</li>
+        <li>Achieved a consolidated score of 57% with 3 academic credits awarded — certified by IIT Kharagpur and recognized under Skill India initiative.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-sub">Verified Credentials</div>
+    <div class="section-title">Certifications</div>
+    <div class="section-line"></div>
+    <div class="certs-grid">
+
+      <div class="cert-card reveal">
+        <div class="cert-img-wrap">
+          <img src="images/cert-nptel.png" alt="NPTEL Cloud Computing Certificate" loading="lazy"/>
+        </div>
+        <div class="cert-body">
+          <div class="cert-issuer">NPTEL · IIT KHARAGPUR · SKILL INDIA</div>
+          <div class="cert-name">Cloud Computing</div>
+          <div class="cert-date">📅 Jan – Apr 2025 &nbsp;·&nbsp; Score: 57% &nbsp;·&nbsp; 3 Credits</div>
+          <div class="cert-id">Roll No: NPTEL25CS11S1537302936</div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-img-wrap">
+          <img src="images/cert-cipher.png" alt="CipherSchools DSA Java Certificate" loading="lazy"/>
+        </div>
+        <div class="cert-body">
+          <div class="cert-issuer">CIPHER SCHOOLS</div>
+          <div class="cert-name">Data Structure &amp; Algorithm using Java Programming</div>
+          <div class="cert-date">📅 July 2025 &nbsp;·&nbsp; Lovely Professional University</div>
+          <div class="cert-id">Certificate ID: CSW2025-13126</div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-img-wrap">
+          <img src="images/cert-infosys1.png" alt="Infosys Generative AI Certificate" loading="lazy"/>
+        </div>
+        <div class="cert-body">
+          <div class="cert-issuer">INFOSYS SPRINGBOARD</div>
+          <div class="cert-name">Build Generative AI Apps and Solutions with No-Code Tools</div>
+          <div class="cert-date">📅 August 29, 2025 &nbsp;·&nbsp; Issued: September 30, 2025</div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-img-wrap">
+          <img src="images/cert-infosys2.png" alt="Infosys Prompt Engineering Certificate" loading="lazy"/>
+        </div>
+        <div class="cert-body">
+          <div class="cert-issuer">INFOSYS SPRINGBOARD</div>
+          <div class="cert-name">ChatGPT-4 Prompt Engineering: ChatGPT, Generative AI &amp; LLM</div>
+          <div class="cert-date">📅 August 25, 2025 &nbsp;·&nbsp; Issued: September 30, 2025</div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-img-wrap">
+          <img src="images/cert-ibm.png" alt="IBM Coursera Hardware OS Certificate" loading="lazy"/>
+        </div>
+        <div class="cert-body">
+          <div class="cert-issuer">IBM · COURSERA</div>
+          <div class="cert-name">Introduction to Hardware and Operating Systems</div>
+          <div class="cert-date">📅 September 15, 2024</div>
+          <div class="cert-id">Verify: coursera.org/verify/TKCVWALMPTI8</div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-img-wrap">
+          <img src="images/cert-mindluster.png" alt="MindLuster Python Certificate" loading="lazy"/>
+        </div>
+        <div class="cert-body">
+          <div class="cert-issuer">MINDLUSTER</div>
+          <div class="cert-name">Python Programming Mastery for Beginner to Advanced</div>
+          <div class="cert-date">📅 February 8, 2024 &nbsp;·&nbsp; Duration: 48 hours</div>
+          <div class="cert-id">Certified No: 16129966506</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-sub">Get In Touch</div>
+    <div class="section-title">Contact</div>
+    <div class="section-line"></div>
+    <div class="contact-grid">
+      <a href="mailto:hemanth3359v@gmail.com" class="contact-card glass">
+        <span class="contact-icon">📧</span>
+        <div class="contact-label">Email</div>
+        <div class="contact-value">hemanth3359v@gmail.com</div>
+      </a>
+      <a href="https://www.linkedin.com/in/hemanth-kumar-paradi" target="_blank" class="contact-card glass">
+        <span class="contact-icon">🔗</span>
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-value">in/hemanth-kumar-paradi</div>
+      </a>
+      <a href="https://github.com/hemanthparadi" target="_blank" class="contact-card glass">
+        <span class="contact-icon">💻</span>
+        <div class="contact-label">GitHub</div>
+        <div class="contact-value">github.com/hemanthparadi</div>
+      </a>
+      <a href="tel:+919390565761" class="contact-card glass">
+        <span class="contact-icon">📱</span>
+        <div class="contact-label">Phone</div>
+        <div class="contact-value">+91-9390565761</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-mini-arc" onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'})" title="Back to top">
+      <div class="fma-ring"></div>
+      <div class="fma-core"></div>
+    </div>
+    <div class="footer-logo">PARADI HEMANTH KUMAR</div>
+  </div>
+  <div class="footer-copy">© 2026 Paradi Hemanth Kumar &nbsp;·&nbsp; Built with ⚡ passion for Data Science</div>
+</footer>
+
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+</div><!-- /main-content -->
+
+<script src="js/main.js"></script>
+</body>
+</html>
